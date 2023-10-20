@@ -20,6 +20,20 @@ const Age = {
     h4s: document.querySelectorAll("h4"),
 };
 
+function makeCard() {
+    //const card = 
+    //return 
+}
+
+function addCard() {
+document.querySelector(".gallery")
+.insertAdjacentElement(
+    "afterend", 
+    <div class="card">${DOMSelectors.firstName.value}
+    </div>
+)
+}
+
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     console.log(DOMSelectors.firstName.value);
