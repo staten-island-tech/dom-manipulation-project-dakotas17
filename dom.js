@@ -20,32 +20,26 @@ const Age = {
     h4s: document.querySelectorAll("h4"),
 };
 
-function makeCard() {
-    //const card = 
-    //return 
-}
-
-function addCard() {
-document.querySelector(".gallery")
-.insertAdjacentElement(
-    "afterend", 
-    <div class="card">${DOMSelectors.firstName.value}
-    </div>
-)
-}
 
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     console.log(DOMSelectors.firstName.value);
     DOMSelectors.h2s.forEach((el)=> el.textContent = DOMSelectors.firstName.value)
 });
-LastName.form.addEventListener("submit", function(event){
-    event.preventDefault();
-    console.log(LastName.lastName.value);
-    LastName.h3s.forEach((el)=> el.textContent = LastName.last.value)
-});
-Age.form.addEventListener("submit", function(event){
-    event.preventDefault();
-    console.log(Age.Age.value);
-    Age.h4s.forEach((el)=> el.textContent = Age.Age.value)
+
+
+const card = {
+button: document.getElementById("btn"),
+text: document.querySelector("#text"),
+box: document.getElementById("box"),
+points: document.querySelectorAll(".point"), //node list
+};
+
+function backgroundandtext(background, text) {
+    background.style.backgroundcolor = "pink";
+    text.textContent = "big pink box?";
+    text.style.fontsize = "40px";
+}
+card.button.addEventListener("click", function () {
+    backgroundandtext(card.box, card.text);
 });
