@@ -25,21 +25,20 @@ DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     console.log(DOMSelectors.firstName.value);
     DOMSelectors.h2s.forEach((el)=> el.textContent = DOMSelectors.firstName.value)
-});
-
-
-const card = {
-button: document.getElementById("btn"),
-text: document.querySelector("#text"),
-box: document.getElementById("box"),
-points: document.querySelectorAll(".point"), //node list
-};
-
-function backgroundandtext(background, text) {
-    background.style.backgroundcolor = "pink";
-    text.textContent = "big pink box?";
-    text.style.fontsize = "40px";
 }
-card.button.addEventListener("click", function () {
-    backgroundandtext(card.box, card.text);
-});
+
+);
+
+//run function to add card and return values
+
+function card(DOMSelectors){
+    return DOMSelectors.value;
+    };
+    
+    function backgroundandtext(background, text) {
+        background.style.backgroundcolor = "pink";
+        text.textContent = "big pink box?";
+        text.style.fontsize = "40px";}
+    card.button.addEventListener("click", function () {
+        backgroundandtext(card.box, card.text);
+    });
