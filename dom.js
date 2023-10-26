@@ -29,16 +29,25 @@ DOMSelectors.form.addEventListener("submit", function(event){
 
 );
 
+
+
 //run function to add card and return values
 
-function card(DOMSelectors){
-    return DOMSelectors.value;
-    };
+//DOMSelectors.button.addEventListener("click", function(){
+//    let input = DOMSelectors.input.value;
+ //   DOMSelectors.box.insertAdjacentHTML("afterbegin", {DOMSelectors});
+    
+//});
+
+
+//function card(DOMSelectors){
+    //return DOMSelectors.value;
+  //  };
     
     function backgroundandtext(background, text) {
-        background.style.backgroundcolor = "pink";
-        text.textContent = "big pink box?";
-        text.style.fontsize = "40px";}
-    card.button.addEventListener("click", function () {
-        backgroundandtext(card.box, card.text);
-    });
+       background.style.backgroundcolor = "pink";
+       text.textContent = "big pink box?";
+       text.style.fontsize = "40px";}
+   //card.button("click", function () {
+   //    backgroundandtext(card.box, card.text);
+ //});
