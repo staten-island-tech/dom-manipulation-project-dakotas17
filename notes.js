@@ -4,3 +4,6 @@ const eyr = {
     box: document.getElementById.value("box"),
     points: document.querySelectorAll.value(".point"), //node list
     };
+
+    DOMSelectors.box.insertAdjacentHTML("afterbegin", <h1>${DOMSelectors}</h1>
+);
