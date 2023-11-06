@@ -9,7 +9,7 @@ const DOMSelectors = {
     h2s: document.querySelectorAll("h2"),
     lastName: document.querySelector(".last-name"),
     h3s: document.querySelectorAll("h3"),
-    age: document.querySelector(".age"),
+    img: document.querySelector(".img"),
     container: document.querySelector(".container"),
 
 };
@@ -25,26 +25,34 @@ function section(){
     `<div class="section">
     <button class = "remove"></button>
     <h1> ${DOMSelectors.firstName.value}</h1>
-    <img src="" alt="">
+    <h2> ${DOMSelectors.lastName.value}</h2>
+    <h3> ${DOMSelectors.img.value}</h3>
     <p></p>
 </div>`)}
    section()
 });
 
+function remove(){
+    let buttons = document.querySelectorAll("remove");
+    buttons.forEach((remove));
+    btn.addEventListener("click", function (remove) {
+        console.log(remove.target.parentElement);
+    })
+};
+
+//clear input boxes after submit,, make value nothing
+
+function clearfields() {
+let
 
 
-
-//run function to add card and return values
+}
 
 
 //function card(DOMSelectors){
     //return DOMSelectors.value;
   //  };
     
-    function backgroundandtext(background, text) {
-       background.style.backgroundcolor = "pink";
-       text.textContent = "big pink box?";
-       text.style.fontsize = "40px";}
    //card.button("click", function () {
    //    backgroundandtext(card.box, card.text);
  //});
