@@ -26,7 +26,7 @@ function section(){
     <button class = "remove"></button>
     <h1> ${DOMSelectors.firstName.value}</h1>
     <h2> ${DOMSelectors.lastName.value}</h2>
-    <h3> ${DOMSelectors.img.value}</h3>
+    <h3> ${DOMSelectors.img}</h3>
     <p></p>
 </div>`)}
    section()
