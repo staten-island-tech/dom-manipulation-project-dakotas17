@@ -30,6 +30,7 @@ function section(){
     <p></p>
 </div>`)}
    section()
+   clearfields()
 });
 
 //function remove(){
@@ -57,4 +58,3 @@ DOMSelectors.lastName.value ="";
 DOMSelectors.img.value ="";
 
 }
-clearfields()
