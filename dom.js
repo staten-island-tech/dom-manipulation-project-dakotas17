@@ -23,7 +23,7 @@ DOMSelectors.form.addEventListener("submit", function(event){
 function section(){
     DOMSelectors.container.insertAdjacentHTML("afterbegin", 
     `<div class="section">
-    <button class = "remove"></button>
+    <button class = "remove">Remove</button>
     <h1> ${DOMSelectors.firstName.value}</h1>
     <h2> ${DOMSelectors.lastName.value}</h2>
     <img src= "${DOMSelectors.img.value}" alt="img" class="img"</h3>
@@ -46,7 +46,7 @@ function removecard(){
     document.querySelectorAll(".remove").forEach((button) => {
         button.addEventListener("click", function(event){
             event.preventDefault();
-            event.target.parentelement.remove();
+            event.target.parentelements.removecard();
         });
     });
 }
