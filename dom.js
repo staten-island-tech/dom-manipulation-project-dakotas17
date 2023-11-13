@@ -31,6 +31,7 @@ function section(){
 </div>`)}
    section()
    clearfields()
+   removecard()
 });
 
 //function remove(){
@@ -49,7 +50,6 @@ function removecard(){
         });
     });
 }
-removecard()
 //clear input boxes after submit,, make value nothing
 
 function clearfields() {
