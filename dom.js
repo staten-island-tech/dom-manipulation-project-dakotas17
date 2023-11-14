@@ -29,9 +29,9 @@ function section(){
     <img src= "${DOMSelectors.img.value}" alt="img" class="img"</h3>
     <p></p>
 </div>`)}
-   section()
-   clearfields()
-   removecard()
+   section();
+   clearfields();
+   removecard();
 });
 
 //function remove(){
@@ -44,9 +44,10 @@ function section(){
 
 function removecard(){
     document.querySelectorAll(".remove").forEach((button) => {
+        console.log(button)
         button.addEventListener("click", function(event){
-            event.preventDefault();
-            event.target.parentelements.removecard();
+        console.log(event.target)
+        event.target.parentElement.remove()
         });
     });
 }
